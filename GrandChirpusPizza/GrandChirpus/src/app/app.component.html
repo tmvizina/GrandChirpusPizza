@@ -1,37 +1,20 @@
 
 
-<style>
-  table,th,td {
-    border: 1px solid black;
-  }
 
-  td{
-    text-align: center;
-  }
-
-  table {
-    border-spacing: 10px;
-  }
-  .center{
-  margin-left: auto;
-  margin-right:auto;
-}
-
-</style>
 
 <h2 class=center> Welcome to Grand Chirpus Pizza</h2>
 
-<h2 class=center>Menu Items</h2>
+<h2 class=center>Menu</h2>
 
 
 
-<table style="width:45%" class=center>
+<table id=pizza style="width:45%" class=center>
   <th>Name</th>
   <th>Category</th>
   <th>Price</th>
 
   <tr *ngFor="let item of fullmenu"> 
-  <td><p>{{item.name}}</p></td>
+  <td id="t01">{{item.name}}</td>
   <td>{{item.category}}</td>
   <td>{{item.price}}</td>
 </tr>
